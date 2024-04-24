@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fichaInventario"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="@drawable/marco_sucursal"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:marqueeRepeatLimit="marquee_forever"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comida"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:hint="Comida:"
+                android:inputType="text"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/pasaje"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:hint="Pasaje:"
+                android:inputType="text"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/hospedaje"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:hint="Hospedaje:"
+                android:inputType="text"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/inputNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Texto largo que se desplazará hacia la izquierda si es muy largo"
+                android:textColor="@color/acvblack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+                android:id="@+id/inputComida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="$ 0.0"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="8dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/inputPasaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="8dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:hint="$ 0.0"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/inputHospedaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="$ 0.0"
+                android:textSize="8dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:inputType="number" />
+
+
+
+            <Spinner
+                android:id="@+id/multi_spinnerInventarios"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/marco_sucursal"
+                android:gravity="center_vertical|center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/descripcion"
+                tools:layout_editor_absoluteY="192dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/fechaGenerar"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="yyyy/mm/dd"
+                android:textColor="@color/acvwhite"
+                android:textSize="9dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/corporativoCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Corporativo"
+                android:textSize="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:buttonTint="#000000"
+                android:tooltipText="Seleccionar si el gasto se cobra en Corporativo" />
+
+            <CheckBox
+                android:id="@+id/deducibleCheckBox"
+                android:layout_width="match_parent"
+                android:text="Deducible"
+                android:textSize="10dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:buttonTint="@color/acvblue"
+                android:tooltipText="Seleccionar si el gasto es deducible" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:id="@+id/EnviarGastoInventario"
+                android:gravity="center_vertical|center_horizontal"
+                android:backgroundTint="@color/white"
+                android:layout_height="45dp"
+                android:contentDescription="Descripción de la imagen"
+                android:src="@drawable/ic_user_foreground" />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/id_sucursal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="XXXX"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

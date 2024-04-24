@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_login">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="240dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="535dp"
+        android:background="@drawable/logo_blanco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColorHint="@color/acvwhite"
+        android:background="@drawable/fondo_login_campos"
+        android:singleLine="true"
+        android:hint="Usuario"
+        android:textColor="@color/acvwhite"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+    <LinearLayout
+        android:id="@+id/pasword"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@drawable/fondo_login_campos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuario">
+
+        <EditText
+            android:id="@+id/contrasenia"
+            android:layout_width="180dp"
+            android:gravity="right"
+            android:layout_height="48dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:singleLine="true"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/acvwhite"
+            android:textColorHint="@color/acvwhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageButton
+        android:id="@+id/toggleButtonShowPassword"
+        android:layout_width="47dp"
+        android:layout_height="37dp"
+
+        android:background="@null"
+        android:src="@drawable/eye_password"
+        android:text="Mostrar contraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contrasenia" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLogin"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fondo_login_campos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pasword">
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Ingresar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewResetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="@color/acvwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLogin" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="#FFFFFF"
+        android:text="Recuerdame"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pasword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

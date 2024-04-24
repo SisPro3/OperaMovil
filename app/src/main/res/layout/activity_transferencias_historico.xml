@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_tesoreria">
+
+    <LinearLayout
+        android:id="@+id/buscadorHistorico"
+        android:layout_width="257dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/marco_sucursal"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/spinnerHistorico"
+            android:layout_width="4dp"
+            android:layout_height="1dp"
+            android:spinnerMode="dropdown"
+            android:textColor="#808080" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewHistorico"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Buscar sucursal / usuario"
+            android:singleLine="true"
+            android:textColor="#808080" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fechaInicio"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/marco_sucursal"
+        android:text="Fecha Inicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fechaFin"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/marco_sucursal"
+        android:text="Fecha Fin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buscar"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/marco_sucursal"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fechaInicioText"
+        android:layout_width="166dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/acvorange"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fechaFinText"
+        android:layout_width="168dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/acvorange"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contenedorHistorico"
+        android:layout_width="366dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buscadorHistorico" />
+
+    <TextView
+        android:id="@+id/contadorHistorico"
+        android:layout_width="103dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical|center_horizontal"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contenedorHistorico" />
+</androidx.constraintlayout.widget.ConstraintLayout>

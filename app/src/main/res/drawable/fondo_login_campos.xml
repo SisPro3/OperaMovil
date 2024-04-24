@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Configura el relleno transparente -->
+    <solid android:color="@android:color/transparent" />
+
+    <gradient
+        android:startColor="#EFB810"
+        android:endColor="#FF8300"
+        android:angle="0" />
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF" />
+
+    <corners android:radius="30dp" />
+</shape>

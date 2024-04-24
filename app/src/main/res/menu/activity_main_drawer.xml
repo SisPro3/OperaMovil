@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:id="@+id/navigaion">
+
+    <!-- Grupo "Contabilidad" -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contabilidad"
+            android:title="Contabilidad">
+            <menu>
+                <item
+                    android:id="@+id/nav_gastos_contabilidad"
+                    android:title="Gastos"
+                    android:icon="@drawable/gastos_foreground"/>
+                <item
+                    android:id="@+id/nav_credito_contabilidad"
+                    android:icon="@drawable/ic_modulo_credito_foreground"
+                    android:title="Crédito" />
+            </menu>
+        </item>
+    </group>
+
+    <!-- Grupo "Tesorería" -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tesoreria"
+            android:title="Tesorería">
+            <menu>
+                <item
+                    android:id="@+id/nav_transferencia_tesoreria"
+                    android:icon="@drawable/ic_modulo_transferencia_foreground"
+                    android:title="Transferencia" />
+            </menu>
+        </item>
+    </group>
+
+    <!-- Grupo "Inventarios" -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inventarios"
+            android:title="Inventarios">
+            <menu>
+                <item
+                    android:id="@+id/nav_gastos_inventarios"
+                    android:icon="@drawable/gastos_foreground"
+                    android:title="Gastos" />
+            </menu>
+        </item>
+    </group>
+
+    <!-- Grupo "Recursos Humanos" -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_recursos_humanos"
+            android:title="Recursos Humanos">
+            <menu>
+                <item
+                    android:id="@+id/nav_gastos_recursos_humanos"
+                    android:icon="@drawable/gastos_foreground"
+                    android:title="Gastos" />
+            </menu>
+        </item>
+    </group>
+
+    <!-- Otros elementos de menú si los tienes -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_comercial"
+            android:title="Comercial">
+            <menu>
+                <item
+                    android:id="@+id/nav_devolucion_comercial"
+                    android:icon="@drawable/ic_devolucion_foreground"
+                    android:title="Devolucion" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

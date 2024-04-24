@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_devolucion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_contabilidad">
+
+    <LinearLayout
+        android:id="@+id/buscadorSuc"
+        android:layout_width="0dp"
+
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/marco_sucursal"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/spinnerBuscadorSuc"
+            android:layout_width="4dp"
+            android:layout_height="1dp"
+            android:spinnerMode="dropdown"
+            android:textColor="#808080" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewBuscadorSuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Buscar Sucursal"
+            android:singleLine="true"
+            android:textColor="#808080" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/proveedor"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/marco_sucursal"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buscadorSuc">
+
+        <Spinner
+            android:id="@+id/spinnerProveedor"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:textColor="#808080" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Proveedor"
+            android:singleLine="true"
+            android:textColor="#808080" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/marco_sucursal"
+        android:gravity="center"
+        android:hint="@string/gastos_descripcion"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:textColor="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proveedor" />
+
+    <EditText
+        android:id="@+id/cantidad"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/marco_sucursal"
+        android:gravity="center"
+        android:hint="Monto"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:textColor="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descripcion" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-280dp"
+        android:gravity="center"
+        android:text="@string/gastos_btn_enviar"
+        app:layout_constraintTop_toBottomOf="@id/cantidad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

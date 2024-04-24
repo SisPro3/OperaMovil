@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvRezagadoDetalle"
+    android:layout_width="match_parent"
+    android:layout_height="158dp"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/marco"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:background="@drawable/marco_sucursal"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Usuario:"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:inputType="text"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/editTextUsera"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Concepto:"
+                android:singleLine="true"
+                android:visibility="invisible"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextUserSucursala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sucursal:"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextFechaCreaciona"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:hint="Autorizado:"
+                android:inputType="text"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextMontoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Monto:"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextSaldoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Saldo:"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextUserCodigoa"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:hint="Codigo:"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="171dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="1dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/usuarioEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Usuario"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:inputType="text" />
+            <TextView
+                android:id="@+id/editTextUser"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Concepto"
+                android:visibility="invisible"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/editTextUserSucursal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sucursal"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/editTextFechaCreacion"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de Creación"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/editTextMonto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Monto"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/editTextSaldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Saldo"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/editTextUserCodigo"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:hint="Codigo"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Reenviar"
+            android:layout_width="63dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+
+                android:contentDescription="Descripción de la imagen"
+                android:src="@drawable/ic_modulo_transferencia_enviar_foreground" />
+
+            <TextView
+
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:hint="Reenviar"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
